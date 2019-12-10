@@ -2,7 +2,7 @@
   "name" : "Gologin",
   "version" : "0.1.0",
   "description" : "",
-  "permissions": ["cookies", "tabs", "privacy", "notifications", "management",
+  "permissions": ["cookies", "tabs", "privacy", "notifications", "management", "processes",
     "webNavigation",  "storage","webRequest","webRequestBlocking", "contextMenus", "<all_urls>"],
   "browser_action": {
     "default_popup": "popup_menu.html",
