@@ -11,7 +11,6 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 });
 
 function closeBrowser() {
-  return;
   chrome.windows.getAll({}, function(windowArray) {
     for (var i = 0; i < windowArray.length; i++) {
       var window = windowArray[i];
