@@ -3,6 +3,13 @@ chrome.windows.onRemoved.addListener((windowId) => {
     closeBrowser();
 })
 
+chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
+  if (request.action === 'save') {
+    closeBrowser();
+    sendResponse();
+  } 
+});
+
 function closeBrowser() {
   return;
   chrome.windows.getAll({}, function(windowArray) {
