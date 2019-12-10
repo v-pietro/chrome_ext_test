@@ -1,0 +1,12 @@
+{
+  "name" : "Gologin",
+  "version" : "0.1.0",
+  "description" : "",
+  "permissions": ["cookies", "tabs", "privacy", "notifications", "management",
+    "webNavigation",  "storage","webRequest","webRequestBlocking", "contextMenus", "<all_urls>"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "web_accessible_resources": ["*"],
+  "manifest_version": 2
+}
